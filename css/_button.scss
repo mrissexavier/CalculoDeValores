@@ -1,0 +1,15 @@
+button{
+    border-radius: 20px;
+    width: 38px;
+    height: 38px;
+    margin-right: 8px;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.100);
+    color:#e2dfdf;
+    position: absolute;
+    right: 12px; bottom: 249px ;
+}
+
+button:hover{
+    background: rgba(41, 41, 41, 0.06);
+}

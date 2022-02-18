@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Formulário Simples</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+    
+    <div id="container">
+        <form id="myForm"> 
+            <h2>Soma de Valores</h2>
+            <div class="msg"></div>
+            <div class="ok"></div>
+
+            <label>Valor 1</label>
+            <input type="text" id="primeiroValor" min="0" oninput="this.value = 
+            !!this.value && Math.abs(this.value) >= 0 ? Math.abs(this.value) : null">
+            
+            <label>Valor 2</label>
+            <input type="text" id="segundoValor" min="0" oninput="this.value = 
+            !!this.value && Math.abs(this.value) >= 0 ? Math.abs(this.value) : null">
+
+            <button onclick="soma()" id="btnSoma">
+                <i class="fa fa-plus"></i>
+            </button>
+            
+            <label>Resultado</label>
+            <p class="resultado"></p>
+
+        </form>
+    </div>
+
+    <a href='https://br.freepik.com/fotos-vetores-gratis/quadro'>Quadro vetor criado por rawpixel.com - br.freepik.com</a>
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>
